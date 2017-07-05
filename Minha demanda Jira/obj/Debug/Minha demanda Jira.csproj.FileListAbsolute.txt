@@ -1,0 +1,11 @@
+c:\users\rafael.simoes\documents\visual studio 2015\Projects\Minha demanda Jira\Minha demanda Jira\bin\Debug\Minha demanda Jira.exe.config
+c:\users\rafael.simoes\documents\visual studio 2015\Projects\Minha demanda Jira\Minha demanda Jira\obj\Debug\Minha demanda Jira.csprojResolveAssemblyReference.cache
+c:\users\rafael.simoes\documents\visual studio 2015\Projects\Minha demanda Jira\Minha demanda Jira\obj\Debug\Interop.SHDocVw.dll
+c:\users\rafael.simoes\documents\visual studio 2015\Projects\Minha demanda Jira\Minha demanda Jira\obj\Debug\Minha demanda Jira.csproj.ResolveComReference.cache
+c:\users\rafael.simoes\documents\visual studio 2015\Projects\Minha demanda Jira\Minha demanda Jira\obj\Debug\Minha_demanda_Jira.Form1.resources
+c:\users\rafael.simoes\documents\visual studio 2015\Projects\Minha demanda Jira\Minha demanda Jira\obj\Debug\Minha_demanda_Jira.Properties.Resources.resources
+c:\users\rafael.simoes\documents\visual studio 2015\Projects\Minha demanda Jira\Minha demanda Jira\obj\Debug\Minha demanda Jira.csproj.GenerateResource.Cache
+c:\users\rafael.simoes\documents\visual studio 2015\Projects\Minha demanda Jira\Minha demanda Jira\bin\Debug\Minha demanda Jira.exe
+c:\users\rafael.simoes\documents\visual studio 2015\Projects\Minha demanda Jira\Minha demanda Jira\bin\Debug\Minha demanda Jira.pdb
+c:\users\rafael.simoes\documents\visual studio 2015\Projects\Minha demanda Jira\Minha demanda Jira\obj\Debug\Minha demanda Jira.exe
+c:\users\rafael.simoes\documents\visual studio 2015\Projects\Minha demanda Jira\Minha demanda Jira\obj\Debug\Minha demanda Jira.pdb
