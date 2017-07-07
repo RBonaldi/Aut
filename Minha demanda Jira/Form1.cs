@@ -21,7 +21,8 @@ namespace Minha_demanda_Jira
     public partial class Form1 : Form
     {
         static InternetExplorer ie;
-        private const string UrlLogin = "http://jira:8080/login.jsp";
+        private IWebBrowser2 _browser;
+        private const string UrlLogin = "https://restrito.cotemig.com.br/login/";
         string Metodo = "Login";
 
         public Form1()
@@ -38,7 +39,7 @@ namespace Minha_demanda_Jira
         {
             Metodo = "Login";
 
-            ie = new InternetExplorer() { Visible = true, };
+            ie = new InternetExplorer() { Visible = false, };
 
             ie.Navigate2(UrlLogin);
 
@@ -70,15 +71,13 @@ namespace Minha_demanda_Jira
 
             var document = ie.Document as IHTMLDocument3;
 
-            var User = document.getElementById("login-form-username");
+            var User = document.getElementById("user_login");
             User.innerText = txt_usuario.Text;
-            User.style.border = "1px solid #e01e1e";
 
-            var password = document.getElementById("login-form-password");
+            var password = document.getElementById("user_password");
             password.innerText = txt_senha.Text;
-            password.style.border = "1px solid #e01e1e";
 
-            var SignIn = document.getElementsByName("login");
+            var SignIn = document.getElementsByTagName("button");
             var login = (IHTMLElement)SignIn.item(0);
             login.click();
         }
@@ -86,23 +85,18 @@ namespace Minha_demanda_Jira
         public void ValidarTelaInicial()
         {
             Metodo = "PegarValor";
-
-            var document = ie.Document as IHTMLDocument3;
-
-            var Dashboard = document.getElementById("dashboard");
-
-            if (Dashboard != null)
-            {
-                document.getElementById("greenhopper_menu").click();
-                document.getElementById("rapidb_lnk_132_lnk").click();
-            }
+            ie.Navigate2("https://restrito.cotemig.com.br/diario/boletim.php");
         }
 
         public void PegarValor()
         {
+            Metodo = "PegarValor";
+
             var document = ie.Document as IHTMLDocument3;
 
-            var a = document.getElementById("ghx-column-headers");
+            var Dashboard = document.getElementById("ui-id-2").innerHTML;
+
+            webBrowser1.DocumentText = Dashboard;
         }
     }
 }
